@@ -24,7 +24,7 @@ namespace main_savitch_14
 	// The computer uses an alpha-beta look ahead algorithm to select its
 	// moves. The return value is the winner of the game (or NEUTRAL for
 	// a tie).
-	who play( );
+	who play(char level);
 
     protected:
 	// *******************************************************************
@@ -62,7 +62,7 @@ namespace main_savitch_14
     	virtual void display_status( ) const = 0;
     	// Evaluate a board position:
 	// NOTE: positive values are good for the computer.
-    	virtual int evaluate( ) const = 0;
+    	virtual int evaluate(char level) const = 0;
     	// Return true if the current game is finished:
     	virtual bool is_game_over( ) const = 0;
     	// Return true if the given move is legal for the next player:
@@ -76,8 +76,8 @@ namespace main_savitch_14
 	static const int SEARCH_LEVELS = 4;  // Levels for look-ahead evaluation
 	
         // PRIVATE FUNCTIONS (these are the same for every game)
-	int eval_with_lookahead(int look_ahead, int beat_this);
-	void make_computer_move( );
+	int eval_with_lookahead(int look_ahead, int beat_this, char level);
+	void make_computer_move(char level);
 	void make_human_move( );
     };
 }

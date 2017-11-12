@@ -21,8 +21,19 @@ using namespace std;
 
 int main(){
 	using namespace main_savitch_14;{
+		char level;
+		cout << "*************************************************************" << endl;
+		cout << "*          ***  ***** *   * ***** *     *      ***          *" << endl;
+		cout << "*         *   *   *   *   * *     *     *     *   *         *" << endl;
+		cout << "*         *   *   *   ***** ***** *     *     *   *         *" << endl;
+		cout << "*         *   *   *   *   * *     *     *     *   *         *" << endl;
+		cout << "*          ***    *   *   * ***** ***** *****  ***          *" << endl;
+		cout << "*************************************************************" << endl;
+		cout << "Choose the level (H - hard, N - normal, E - easy) : ";
+		cin >> level;
+		cout << endl;
 		Othello othe;
-		othe.play();
+		othe.play(level);
 	}
 	return 0;
 }

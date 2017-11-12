@@ -35,7 +35,7 @@ namespace main_savitch_14
 			void display_message(const std::string& message) const;
 			bool is_game_over( ) const;
 			void compute_moves(std::queue<std::string>& moves) const;
-			int evaluate( ) const;
+			int evaluate(char level) const;
 			void flip_flip(int a,int b,int c,int d);
 			void pass(std::string move);
 			bool up_legal(int a, int b, int c, int d)const;

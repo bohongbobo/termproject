@@ -174,106 +174,108 @@ namespace main_savitch_14
 		}
 	}
 
-	int Othello::evaluate( ) const{
+	int Othello::evaluate(char level) const{
 		int eva = 0;
-		if(board -> is_black(0,0))
-			eva -= 100;
-		if(board -> is_black(0,7))
-			eva -= 100;
-		if(board -> is_black(7,0))
-			eva -= 100;
-		if(board -> is_black(7,7))
-			eva -= 100;
-		if(board -> is_white(0,0)){
-			eva += 100;
-		}
-		if(board -> is_white(0,7)){
-			eva += 100;
-		}
-		if(board -> is_white(7,0)){
-			eva += 100;
-		}
-		if(board -> is_white(7,7)){
-			eva += 100;
-		}
-		for(int i = 1; i < 7; i++){
-			if(board -> is_black(0,i)){
-				if(i == 1 || i == 6)
-					eva += 50;
-				else
-					eva -= 50;
+		if(level == 'h' || level == 'H'){
+			if(board -> is_black(0,0))
+				eva -= 100;
+			if(board -> is_black(0,7))
+				eva -= 100;
+			if(board -> is_black(7,0))
+				eva -= 100;
+			if(board -> is_black(7,7))
+				eva -= 100;
+			if(board -> is_white(0,0)){
+				eva += 100;
 			}
-			else if(board -> is_white(0,i)){
-				if(i == 1 || i == 6){
-					eva -= 50;
-				}
-				else{
-					eva += 50;
-				}
+			if(board -> is_white(0,7)){
+				eva += 100;
 			}
-		}
-		for(int i = 1; i < 7; i++){
-			if(board -> is_black(7,i)){
-				if(i == 1 || i == 6)
-					eva += 50;
-				else
-					eva -= 50;
+			if(board -> is_white(7,0)){
+				eva += 100;
 			}
-			else if(board -> is_white(7,i)){
-				if(i == 1 || i == 6){
-					eva -= 50;
+			if(board -> is_white(7,7)){
+				eva += 100;
+			}
+			for(int i = 1; i < 7; i++){
+				if(board -> is_black(0,i)){
+					if(i == 1 || i == 6)
+						eva += 50;
+					else
+						eva -= 50;
 				}
-				else{
-					eva += 50;
+				else if(board -> is_white(0,i)){
+					if(i == 1 || i == 6){
+						eva -= 50;
+					}
+					else{
+						eva += 50;
+					}
 				}
 			}
-		}
-		for(int i = 1; i < 7; i++){
-			if(board -> is_black(i,0)){
-				if(i == 1 || i == 6)
-					eva += 50;
-				else
-					eva -= 50;
-			}
-			else if(board -> is_white(i,0)){
-				if(i == 1 || i == 6){
-					eva -= 50;
+			for(int i = 1; i < 7; i++){
+				if(board -> is_black(7,i)){
+					if(i == 1 || i == 6)
+						eva += 50;
+					else
+						eva -= 50;
 				}
-				else{
-					eva += 50;
-				}
-			}
-		}
-		for(int i = 1; i < 7; i++){
-			if(board -> is_black(i,7)){
-				if(i == 1 || i == 6)
-					eva += 50;
-				else
-					eva -= 50;
-			}
-			else if(board -> is_white(i,7)){
-				if(i == 1 || i == 6){
-					eva -= 50;
-				}
-				else{
-					eva += 50;
+				else if(board -> is_white(7,i)){
+					if(i == 1 || i == 6){
+						eva -= 50;
+					}
+					else{
+						eva += 50;
+					}
 				}
 			}
-		}
-		for(int i = 1; i < 7; i++){
-			for(int j = 1; j < 7; j++){
-				if(board -> is_black(1,1)||board -> is_black(1,6)||board -> is_black(6,1)||board -> is_black(6,6))
-				{
-					eva += 80;
+			for(int i = 1; i < 7; i++){
+				if(board -> is_black(i,0)){
+					if(i == 1 || i == 6)
+						eva += 50;
+					else
+						eva -= 50;
 				}
-				else if(board -> is_white(1,1)||board -> is_white(1,6)||board -> is_white(6,1)||board -> is_white(6,6)){
-					eva -= 80;
+				else if(board -> is_white(i,0)){
+					if(i == 1 || i == 6){
+						eva -= 50;
+					}
+					else{
+						eva += 50;
+					}
 				}
-				else if(board -> is_black(i,j)){
-					eva-=5;
+			}
+			for(int i = 1; i < 7; i++){
+				if(board -> is_black(i,7)){
+					if(i == 1 || i == 6)
+						eva += 50;
+					else
+						eva -= 50;
 				}
-				else if(board -> is_white(i,j)){
-					eva+=5;
+				else if(board -> is_white(i,7)){
+					if(i == 1 || i == 6){
+						eva -= 50;
+					}	
+					else{
+						eva += 50;
+					}
+				}
+			}
+			for(int i = 1; i < 7; i++){
+				for(int j = 1; j < 7; j++){
+					if(board -> is_black(1,1)||board -> is_black(1,6)||board -> is_black(6,1)||board -> is_black(6,6))
+					{
+						eva += 80;
+					}
+					else if(board -> is_white(1,1)||board -> is_white(1,6)||board -> is_white(6,1)||board -> is_white(6,6)){
+						eva -= 80;
+					}
+					else if(board -> is_black(i,j)){
+						eva-=5;
+					}
+					else if(board -> is_white(i,j)){
+						eva+=5;
+					}
 				}
 			}
 		}
