@@ -1,4 +1,10 @@
 // File: game.cxx
+/**
+*@file game.cc
+*@brief This is a file includes moves, winer and some other functions
+*@author Shipeng Yang, Zhaojie Chen, Bohong Li, Xudong Yuan
+*@date 2017/11/12
+*/
 
 #include <cassert>    // Provides assert
 #include <climits>    // Provides INT_MAX and INT_MIN
@@ -18,16 +24,20 @@ namespace main_savitch_14
     // PUBLIC MEMBER FUNCTIONS
 
     game::who game::play(char level)
-    // The play function should not be overridden. It plays one round of the
-    // game, with the human player moving first and the computer second.
-    // The return value is the winner of the game (or NEUTRAL for a tie).
+    /**
+    * The play function should not be overridden. It plays one round of the
+    * game, with the human player moving first and the computer second.
+    * The return value is the winner of the game (or NEUTRAL for a tie).
+    */
     {
 	restart( );
 	if(level != 'h' && level != 'H'){
 		cout << "not finish" << endl;
 		return winning();
 	}
-   // The commenting you see below sets this up for Phase One	
+     /**
+     * The commenting you see below sets this up for Phase One	
+     */
 	while (!is_game_over( ))
 	{
 	    display_status( );
@@ -78,12 +88,14 @@ namespace main_savitch_14
     // PRIVATE FUNCTIONS (these are the same for every game)
 
     int game::eval_with_lookahead(int look_ahead, int beat_this, char level)
-    // Evaluate a board position with lookahead.
-    // --int look_aheads:  How deep the lookahead should go to evaluate the move.
-    // --int beat_this: Value of another move that we?re considering. If the
-    // current board position can't beat this, then cut it short.
-    // The return value is large if the position is good for the player who just
-    // moved. 
+    /** 
+    * Evaluate a board position with lookahead.
+    * --int look_aheads:  How deep the lookahead should go to evaluate the move.
+    * --int beat_this: Value of another move that we?re considering. If the
+    * current board position can't beat this, then cut it short.
+    * The return value is large if the position is good for the player who just
+    * moved. 
+    */
     {
     	queue<string> moves;   // All possible opponent moves
 	int value;             // Value of a board position after opponent moves
