@@ -176,7 +176,10 @@ namespace main_savitch_14
 
 	int Othello::evaluate(char level) const{
 		int eva = 0;
-		if(level == 'h' || level == 'H'){
+		if(level == 'e'|| level == 'E'){
+			return 0;
+		}
+		else if(level == 'h' || level == 'H'){
 			if(board -> is_black(0,0))
 				eva -= 100;
 			if(board -> is_black(0,7))

@@ -31,7 +31,7 @@ namespace main_savitch_14
     */
     {
 	restart( );
-	if(level != 'h' && level != 'H'){
+	if(level == 'n' || level == 'N'){
 		cout << "not finish" << endl;
 		return winning();
 	}
