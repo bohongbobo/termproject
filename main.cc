@@ -1,18 +1,9 @@
-//**************************
-//
-// program: prog8-main.cc(stage 3)
-//
-// Name :Zhaojie Chen
-//
-// Introduce :Main program start playing.
-//            
-//
-// Email :zc700015@ohio.edu
-//
-//
-// Date : 12/01/2016
-//
-/**********************************************************/
+/**
+*@file main.cc
+*@brief This is the main function
+*@author Shipeng Yang, Zhaojie Chen, Bohong Li, Xudong Yuan
+*@date 2017/11/12
+*/
 #include "game.h"
 #include "othello.h"
 #include <iostream>
