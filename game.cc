@@ -137,7 +137,7 @@ namespace main_savitch_14
     {
 	queue<string> moves;
 	int value;
-	int best_value;
+	int best_value = 0;
 	string best_move;
 	game* future;
 	
