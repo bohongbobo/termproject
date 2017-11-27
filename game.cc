@@ -31,10 +31,6 @@ namespace main_savitch_14
     */
     {
 	restart( );
-	if(level == 'n' || level == 'N'){
-		cout << "not finish" << endl;
-		return winning();
-	}
      /**
      * The commenting you see below sets this up for Phase One	
      */
