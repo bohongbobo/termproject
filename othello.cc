@@ -197,11 +197,14 @@ namespace main_savitch_14
 		else if(level == 'n' || level == 'N'){
 			for(int i = 0; i < 7; i++){
 				for(int j = 0; j < 7; j++){
-					if(board -> is_black(i,j)){
-						eva-=5;
+					if(board -> is_white(i,j)){
+						eva-=50;
 					}
-					else if(board -> is_white(i,j)){
-						eva+=5;
+					else if(board -> is_black(i,j)){
+						eva+=50;
+					}
+					else{
+						eva+=0;
 					}
 				}
 			}
