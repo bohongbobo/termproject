@@ -68,6 +68,11 @@ namespace main_savitch_14
 
 /**
 * @brief display current status
+*
+* @see is_black()
+* @see is_white()
+* @see is_empty()
+* @see is_game_over()
 */	
 	void Othello::display_status()const{
 		cout << endl;
@@ -111,7 +116,12 @@ namespace main_savitch_14
 
 /**
 * @brief check if the location player choose is legal or not
+*
 * @param move the location which player choose
+* @see next_move()
+* @see get_piese()
+* @see all_legal()
+* @return return true if the move is legal otherwise false
 */	
 	bool Othello::is_legal(const string& move)const{
 		int hor;
@@ -146,7 +156,10 @@ namespace main_savitch_14
 
 /**
 * @brief display the message for next step
+*
 * @param message it is used for checking if it is legal move
+* @see next_move()
+* @see display_message()
 */
 	void Othello::display_message(const string& message)const{
 		if(message != "Illegal move.\n"){
@@ -168,7 +181,12 @@ namespace main_savitch_14
 
 /**
 * @brief check if game is over
+*
 * @return return true if game is over
+* @see get_piese()
+* @see human_legal()
+* @see computer_legal()
+* @return return true if the game is over
 */	
 	bool Othello::is_game_over( ) const{
 		int over = 0;
@@ -187,6 +205,9 @@ namespace main_savitch_14
 
 /**
 * @brief for AI the make sure different location has different value
+*
+* @see is_black()
+* @see is_white()
 * @return the total evalueta value to know which location the best choice
 */
 	int Othello::evaluate(char level) const{
@@ -351,6 +372,11 @@ namespace main_savitch_14
 
 /**
 * @brief check if someone can move next step move
+*
+* @see is_game_over()
+* @see make_move()
+* @see computer_legal()
+* @see human_legal()
 */	
 	void Othello::pass(string pass){ 
 		if(!is_game_over()){
@@ -371,6 +397,8 @@ namespace main_savitch_14
 
 /**
 * @brief check if up side is legal
+*
+* @see get_piece()
 * @return return true if it is legal
 */
 	bool Othello::up_legal(int a, int b, int c, int d)const{
@@ -391,6 +419,8 @@ namespace main_savitch_14
 	}
 /**
 * @brief check if down side is legal
+*
+* @see get_piece()
 * @return return true if it is legal
 */
 	bool Othello::down_legal(int a, int b, int c, int d)const{
@@ -409,6 +439,8 @@ namespace main_savitch_14
 
 /**
 * @brief check if left side is legal
+*
+* @see get_piece()
 * @return return true if it is legal
 */
 	bool Othello::left_legal(int a, int b, int c, int d)const{
@@ -430,6 +462,8 @@ namespace main_savitch_14
 
 /**
 * @brief check if right side is legal
+*
+* @see get_piece()
 * @return return true if it is legal
 */
 	bool Othello::right_legal(int a, int b, int c, int d)const{
@@ -448,6 +482,8 @@ namespace main_savitch_14
 
 /**
 * @brief check if left up side is legal
+*
+* @see get_piece()
 * @return return true if it is legal
 */
 	bool Othello::left_up_legal(int a, int b, int c, int d)const{
@@ -472,6 +508,8 @@ namespace main_savitch_14
 
 /**
 * @brief check if right up side is legal
+*
+* @see get_piece()
 * @return return true if it is legal
 */
 	bool Othello::right_up_legal(int a, int b, int c, int d)const{
@@ -493,6 +531,8 @@ namespace main_savitch_14
 
 /**
 * @brief check if left down side is legal
+*
+* @see get_piece()
 * @return return true if it is legal
 */
 	bool Othello::left_down_legal(int a, int b, int c, int d)const{
@@ -514,6 +554,8 @@ namespace main_savitch_14
 
 /**
 * @brief check if right down side is legal
+*
+* @see get_piece()
 * @return return true if it is legal
 */
 	bool Othello::right_down_legal(int a, int b, int c, int d)const{
@@ -533,6 +575,18 @@ namespace main_savitch_14
 
 /**
 * @brief combine all check sides
+*
+* @see up_legal()
+* @see down_legal()
+* @see left_legal()
+* @see right_legal()
+* @see left_up_legal()
+* @see right_up_legal()
+* @see left_down_legal()
+* @see right_down_legal()
+* @see human_legal()
+* @see get_piece()
+* @see all_legal()
 * @return return true if it is legal
 */
 	bool Othello::all_legal(int a, int b, int c, int d)const{
@@ -557,6 +611,9 @@ namespace main_savitch_14
 
 /**
 * @brief check computer step is legal
+*
+* @see get_piece()
+* @see all_legal()
 * @return return true if it is legal
 */
 	bool Othello::computer_legal()const{ 
@@ -574,6 +631,9 @@ namespace main_savitch_14
 
 /**
 * @brief check who is the winnner
+*
+* @see get_piece()
+* @return return who wins this game otherwise return neutral
 */	
 	game::who Othello::winning() const{
 		int black = 0;
@@ -600,6 +660,16 @@ namespace main_savitch_14
 
 /**
 * @brief flip_flip after someone make moves
+*
+* @see get_piece()
+* @see up_legal()
+* @see down_legal()
+* @see left_legal()
+* @see right_legal()
+* @see left_up_legal()
+* @see right_up_legal()
+* @see left_down_legal()
+* @see right_down_legal()
 */		
 	void Othello::flip_flip(int a,int b,int c,int d){
 		board -> flip(a,b,c);
@@ -647,6 +717,8 @@ namespace main_savitch_14
 
 /**
 * @brief make computer move
+*
+* @see is_legal()
 */	
 
 	void Othello::compute_moves(std::queue<std::string>& moves) const{
