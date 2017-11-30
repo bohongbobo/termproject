@@ -51,6 +51,10 @@ namespace main_savitch_14
     //*************************************************************************
     // OPTIONAL VIRTUAL FUNCTIONS (overriding these functions is optional)
 
+/**
+* @brief display message a message
+* @param message the message you want to display
+*/
     void game::display_message(const string& message) const
     {
 	cout << message;
@@ -65,6 +69,11 @@ namespace main_savitch_14
 	return answer;
     }
 
+/**
+* @brief check who is the winner
+* @see next_mover()
+* @see last_mover()
+*/
     game::who game::winning( ) const
     {
 	char level;
@@ -133,6 +142,13 @@ namespace main_savitch_14
     	return -best_value;
     }
 
+/**
+* @brief make computer have next best move.
+* @param leve we have three different levels which is easy, normal and hard, choose one here.
+* @see compute_moves()
+* @see moves_pop()
+* @see make_move()
+*/
     void game::make_computer_move(char level)
     {
 	queue<string> moves;
@@ -166,6 +182,12 @@ namespace main_savitch_14
 	make_move(best_move);
     }
 
+
+/**
+* @brief make human have next move
+* @see is_legal()
+* @see make_move()
+*/
     void game::make_human_move( )
     {
         string move;

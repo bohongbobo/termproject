@@ -51,7 +51,7 @@ namespace main_savitch_14
 	}
 
 /**
-* @brief restart the game
+* @brief restart the game, set up four original locations
 */
 	void Othello::restart(){
 		for(int i = 0;i < 8;i++){

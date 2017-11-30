@@ -1,0 +1,527 @@
+\hypertarget{classmain__savitch__14_1_1Othello}{}\section{main\+\_\+savitch\+\_\+14\+:\+:Othello Class Reference}
+\label{classmain__savitch__14_1_1Othello}\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+
+
+Inheritance diagram for main\+\_\+savitch\+\_\+14\+:\+:Othello\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classmain__savitch__14_1_1Othello__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for main\+\_\+savitch\+\_\+14\+:\+:Othello\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classmain__savitch__14_1_1Othello__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Othello} (const \hyperlink{classmain__savitch__14_1_1Othello}{Othello} \&other)\hypertarget{classmain__savitch__14_1_1Othello_a94d2c39352bca01e0896ef3a2fe94878}{}\label{classmain__savitch__14_1_1Othello_a94d2c39352bca01e0896ef3a2fe94878}
+
+\item 
+\hyperlink{classmain__savitch__14_1_1game}{game} $\ast$ {\bfseries clone} () const \hypertarget{classmain__savitch__14_1_1Othello_ac1f1e41b5acbc6bf7c0c41ea66a546be}{}\label{classmain__savitch__14_1_1Othello_ac1f1e41b5acbc6bf7c0c41ea66a546be}
+
+\item 
+void {\bfseries make\+\_\+move} (const std\+::string \&move)\hypertarget{classmain__savitch__14_1_1Othello_ac6aa8766ab2b905e6a9fe300f547e0c0}{}\label{classmain__savitch__14_1_1Othello_ac6aa8766ab2b905e6a9fe300f547e0c0}
+
+\item 
+void \hyperlink{classmain__savitch__14_1_1Othello_abf872b8074bfa4c04119317dc3b39af2}{restart} ()\hypertarget{classmain__savitch__14_1_1Othello_abf872b8074bfa4c04119317dc3b39af2}{}\label{classmain__savitch__14_1_1Othello_abf872b8074bfa4c04119317dc3b39af2}
+
+\begin{DoxyCompactList}\small\item\em restart the game, set up four original locations \end{DoxyCompactList}\item 
+void \hyperlink{classmain__savitch__14_1_1Othello_a471f0e8f0e63ed32d764682f60110267}{display\+\_\+status} () const 
+\begin{DoxyCompactList}\small\item\em display current status \end{DoxyCompactList}\item 
+bool \hyperlink{classmain__savitch__14_1_1Othello_af25b1502991e71e6bedbfa36a4006a8c}{is\+\_\+legal} (const std\+::string \&move) const 
+\begin{DoxyCompactList}\small\item\em check if the location player choose is legal or not \end{DoxyCompactList}\item 
+void \hyperlink{classmain__savitch__14_1_1Othello_a87ef083b9bc3943a0951f70c3ba9160a}{display\+\_\+message} (const std\+::string \&message) const 
+\begin{DoxyCompactList}\small\item\em display the message for next step \end{DoxyCompactList}\item 
+bool \hyperlink{classmain__savitch__14_1_1Othello_a4387d20f953aab54025760ec3f72f7ca}{is\+\_\+game\+\_\+over} () const 
+\begin{DoxyCompactList}\small\item\em check if game is over \end{DoxyCompactList}\item 
+void \hyperlink{classmain__savitch__14_1_1Othello_aae15562565348c574b8e4c0b7782d19f}{compute\+\_\+moves} (std\+::queue$<$ std\+::string $>$ \&moves) const 
+\begin{DoxyCompactList}\small\item\em make computer move \end{DoxyCompactList}\item 
+int \hyperlink{classmain__savitch__14_1_1Othello_aa5a29557cb041e963e53f077d7932e16}{evaluate} (char level) const 
+\begin{DoxyCompactList}\small\item\em for AI the make sure different location has different value \end{DoxyCompactList}\item 
+void \hyperlink{classmain__savitch__14_1_1Othello_a49ca2e53baf37714c14c59875c270dc4}{flip\+\_\+flip} (int a, int b, int c, int d)
+\begin{DoxyCompactList}\small\item\em flip\+\_\+flip after someone make moves \end{DoxyCompactList}\item 
+void \hyperlink{classmain__savitch__14_1_1Othello_aa471c56d1634172f92acdfcbe3faa363}{pass} (std\+::string move)
+\begin{DoxyCompactList}\small\item\em check if someone can move next step move \end{DoxyCompactList}\item 
+bool \hyperlink{classmain__savitch__14_1_1Othello_a23310eaa078cddaf0fd86303f2f191f4}{up\+\_\+legal} (int a, int b, int c, int d) const 
+\begin{DoxyCompactList}\small\item\em check if up side is legal \end{DoxyCompactList}\item 
+bool \hyperlink{classmain__savitch__14_1_1Othello_a1a6041ee29e5586ec07bdfef782731d0}{down\+\_\+legal} (int a, int b, int c, int d) const 
+\begin{DoxyCompactList}\small\item\em check if down side is legal \end{DoxyCompactList}\item 
+bool \hyperlink{classmain__savitch__14_1_1Othello_a50e871a1c0ceb803f3ffc4d4b2987062}{left\+\_\+legal} (int a, int b, int c, int d) const 
+\begin{DoxyCompactList}\small\item\em check if left side is legal \end{DoxyCompactList}\item 
+bool \hyperlink{classmain__savitch__14_1_1Othello_ac094aa06f0df5ef57b03e249f892428e}{right\+\_\+legal} (int a, int b, int c, int d) const 
+\begin{DoxyCompactList}\small\item\em check if right side is legal \end{DoxyCompactList}\item 
+bool \hyperlink{classmain__savitch__14_1_1Othello_a8ec6b317a873a919836c4be0534427b9}{left\+\_\+up\+\_\+legal} (int a, int b, int c, int d) const 
+\begin{DoxyCompactList}\small\item\em check if left up side is legal \end{DoxyCompactList}\item 
+bool \hyperlink{classmain__savitch__14_1_1Othello_ab7af6485f5dc762e92f0858c193e088b}{right\+\_\+up\+\_\+legal} (int a, int b, int c, int d) const 
+\begin{DoxyCompactList}\small\item\em check if right up side is legal \end{DoxyCompactList}\item 
+bool \hyperlink{classmain__savitch__14_1_1Othello_a161a5b2a574446e9cf16e66fab96234d}{left\+\_\+down\+\_\+legal} (int a, int b, int c, int d) const 
+\begin{DoxyCompactList}\small\item\em check if left down side is legal \end{DoxyCompactList}\item 
+bool \hyperlink{classmain__savitch__14_1_1Othello_a639b1780203d650877491fd69e63871a}{right\+\_\+down\+\_\+legal} (int a, int b, int c, int d) const 
+\begin{DoxyCompactList}\small\item\em check if right down side is legal \end{DoxyCompactList}\item 
+bool \hyperlink{classmain__savitch__14_1_1Othello_a015372a23879814a43aed9b4259f9834}{all\+\_\+legal} (int a, int b, int c, int d) const 
+\begin{DoxyCompactList}\small\item\em combine all check sides \end{DoxyCompactList}\item 
+bool {\bfseries human\+\_\+legal} () const \hypertarget{classmain__savitch__14_1_1Othello_ac1a0125fe3994e4c2d24b1440e775da7}{}\label{classmain__savitch__14_1_1Othello_ac1a0125fe3994e4c2d24b1440e775da7}
+
+\item 
+bool \hyperlink{classmain__savitch__14_1_1Othello_aa0a3222b954bf36dec6de48bdf17ebb7}{computer\+\_\+legal} () const 
+\begin{DoxyCompactList}\small\item\em check computer step is legal \end{DoxyCompactList}\item 
+who \hyperlink{classmain__savitch__14_1_1Othello_a8934d1b63f73c03dae9629dbe03955d7}{winning} () const 
+\begin{DoxyCompactList}\small\item\em check who is the winnner \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!all\+\_\+legal@{all\+\_\+legal}}
+\index{all\+\_\+legal@{all\+\_\+legal}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{all\+\_\+legal(int a, int b, int c, int d) const }{all_legal(int a, int b, int c, int d) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool main\+\_\+savitch\+\_\+14\+::\+Othello\+::all\+\_\+legal (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b, }
+\item[{int}]{c, }
+\item[{int}]{d}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmain__savitch__14_1_1Othello_a015372a23879814a43aed9b4259f9834}{}\label{classmain__savitch__14_1_1Othello_a015372a23879814a43aed9b4259f9834}
+
+
+combine all check sides 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classmain__savitch__14_1_1Othello_a23310eaa078cddaf0fd86303f2f191f4}{up\+\_\+legal()} 
+
+\hyperlink{classmain__savitch__14_1_1Othello_a1a6041ee29e5586ec07bdfef782731d0}{down\+\_\+legal()} 
+
+\hyperlink{classmain__savitch__14_1_1Othello_a50e871a1c0ceb803f3ffc4d4b2987062}{left\+\_\+legal()} 
+
+\hyperlink{classmain__savitch__14_1_1Othello_ac094aa06f0df5ef57b03e249f892428e}{right\+\_\+legal()} 
+
+\hyperlink{classmain__savitch__14_1_1Othello_a8ec6b317a873a919836c4be0534427b9}{left\+\_\+up\+\_\+legal()} 
+
+\hyperlink{classmain__savitch__14_1_1Othello_ab7af6485f5dc762e92f0858c193e088b}{right\+\_\+up\+\_\+legal()} 
+
+\hyperlink{classmain__savitch__14_1_1Othello_a161a5b2a574446e9cf16e66fab96234d}{left\+\_\+down\+\_\+legal()} 
+
+\hyperlink{classmain__savitch__14_1_1Othello_a639b1780203d650877491fd69e63871a}{right\+\_\+down\+\_\+legal()} 
+
+human\+\_\+legal() 
+
+get\+\_\+piece() 
+
+\hyperlink{classmain__savitch__14_1_1Othello_a015372a23879814a43aed9b4259f9834}{all\+\_\+legal()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+return true if it is legal 
+\end{DoxyReturn}
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!compute\+\_\+moves@{compute\+\_\+moves}}
+\index{compute\+\_\+moves@{compute\+\_\+moves}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{compute\+\_\+moves(std\+::queue$<$ std\+::string $>$ \&moves) const }{compute_moves(std::queue< std::string > &moves) const }}]{\setlength{\rightskip}{0pt plus 5cm}void main\+\_\+savitch\+\_\+14\+::\+Othello\+::compute\+\_\+moves (
+\begin{DoxyParamCaption}
+\item[{std\+::queue$<$ std\+::string $>$ \&}]{moves}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmain__savitch__14_1_1Othello_aae15562565348c574b8e4c0b7782d19f}{}\label{classmain__savitch__14_1_1Othello_aae15562565348c574b8e4c0b7782d19f}
+
+
+make computer move 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classmain__savitch__14_1_1Othello_af25b1502991e71e6bedbfa36a4006a8c}{is\+\_\+legal()} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classmain__savitch__14_1_1game}{main\+\_\+savitch\+\_\+14\+::game}.
+
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!computer\+\_\+legal@{computer\+\_\+legal}}
+\index{computer\+\_\+legal@{computer\+\_\+legal}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{computer\+\_\+legal() const }{computer_legal() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool main\+\_\+savitch\+\_\+14\+::\+Othello\+::computer\+\_\+legal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmain__savitch__14_1_1Othello_aa0a3222b954bf36dec6de48bdf17ebb7}{}\label{classmain__savitch__14_1_1Othello_aa0a3222b954bf36dec6de48bdf17ebb7}
+
+
+check computer step is legal 
+
+\begin{DoxySeeAlso}{See also}
+get\+\_\+piece() 
+
+\hyperlink{classmain__savitch__14_1_1Othello_a015372a23879814a43aed9b4259f9834}{all\+\_\+legal()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+return true if it is legal 
+\end{DoxyReturn}
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!display\+\_\+message@{display\+\_\+message}}
+\index{display\+\_\+message@{display\+\_\+message}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{display\+\_\+message(const std\+::string \&message) const }{display_message(const std::string &message) const }}]{\setlength{\rightskip}{0pt plus 5cm}void main\+\_\+savitch\+\_\+14\+::\+Othello\+::display\+\_\+message (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{message}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmain__savitch__14_1_1Othello_a87ef083b9bc3943a0951f70c3ba9160a}{}\label{classmain__savitch__14_1_1Othello_a87ef083b9bc3943a0951f70c3ba9160a}
+
+
+display the message for next step 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & it is used for checking if it is legal move \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+next\+\_\+move() 
+
+\hyperlink{classmain__savitch__14_1_1Othello_a87ef083b9bc3943a0951f70c3ba9160a}{display\+\_\+message()} 
+\end{DoxySeeAlso}
+
+
+Reimplemented from \hyperlink{classmain__savitch__14_1_1game_ab8b87c3a1b68634861a8c0ed2b9f1992}{main\+\_\+savitch\+\_\+14\+::game}.
+
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!display\+\_\+status@{display\+\_\+status}}
+\index{display\+\_\+status@{display\+\_\+status}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{display\+\_\+status() const }{display_status() const }}]{\setlength{\rightskip}{0pt plus 5cm}void main\+\_\+savitch\+\_\+14\+::\+Othello\+::display\+\_\+status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmain__savitch__14_1_1Othello_a471f0e8f0e63ed32d764682f60110267}{}\label{classmain__savitch__14_1_1Othello_a471f0e8f0e63ed32d764682f60110267}
+
+
+display current status 
+
+\begin{DoxySeeAlso}{See also}
+is\+\_\+black() 
+
+is\+\_\+white() 
+
+is\+\_\+empty() 
+
+\hyperlink{classmain__savitch__14_1_1Othello_a4387d20f953aab54025760ec3f72f7ca}{is\+\_\+game\+\_\+over()} 
+\end{DoxySeeAlso}
+
+
+Implements \hyperlink{classmain__savitch__14_1_1game}{main\+\_\+savitch\+\_\+14\+::game}.
+
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!down\+\_\+legal@{down\+\_\+legal}}
+\index{down\+\_\+legal@{down\+\_\+legal}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{down\+\_\+legal(int a, int b, int c, int d) const }{down_legal(int a, int b, int c, int d) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool main\+\_\+savitch\+\_\+14\+::\+Othello\+::down\+\_\+legal (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b, }
+\item[{int}]{c, }
+\item[{int}]{d}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmain__savitch__14_1_1Othello_a1a6041ee29e5586ec07bdfef782731d0}{}\label{classmain__savitch__14_1_1Othello_a1a6041ee29e5586ec07bdfef782731d0}
+
+
+check if down side is legal 
+
+\begin{DoxySeeAlso}{See also}
+get\+\_\+piece() 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+return true if it is legal 
+\end{DoxyReturn}
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{evaluate(char level) const }{evaluate(char level) const }}]{\setlength{\rightskip}{0pt plus 5cm}int main\+\_\+savitch\+\_\+14\+::\+Othello\+::evaluate (
+\begin{DoxyParamCaption}
+\item[{char}]{level}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmain__savitch__14_1_1Othello_aa5a29557cb041e963e53f077d7932e16}{}\label{classmain__savitch__14_1_1Othello_aa5a29557cb041e963e53f077d7932e16}
+
+
+for AI the make sure different location has different value 
+
+\begin{DoxySeeAlso}{See also}
+is\+\_\+black() 
+
+is\+\_\+white() 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+the total evalueta value to know which location the best choice 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmain__savitch__14_1_1game}{main\+\_\+savitch\+\_\+14\+::game}.
+
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!flip\+\_\+flip@{flip\+\_\+flip}}
+\index{flip\+\_\+flip@{flip\+\_\+flip}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{flip\+\_\+flip(int a, int b, int c, int d)}{flip_flip(int a, int b, int c, int d)}}]{\setlength{\rightskip}{0pt plus 5cm}void main\+\_\+savitch\+\_\+14\+::\+Othello\+::flip\+\_\+flip (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b, }
+\item[{int}]{c, }
+\item[{int}]{d}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain__savitch__14_1_1Othello_a49ca2e53baf37714c14c59875c270dc4}{}\label{classmain__savitch__14_1_1Othello_a49ca2e53baf37714c14c59875c270dc4}
+
+
+flip\+\_\+flip after someone make moves 
+
+\begin{DoxySeeAlso}{See also}
+get\+\_\+piece() 
+
+\hyperlink{classmain__savitch__14_1_1Othello_a23310eaa078cddaf0fd86303f2f191f4}{up\+\_\+legal()} 
+
+\hyperlink{classmain__savitch__14_1_1Othello_a1a6041ee29e5586ec07bdfef782731d0}{down\+\_\+legal()} 
+
+\hyperlink{classmain__savitch__14_1_1Othello_a50e871a1c0ceb803f3ffc4d4b2987062}{left\+\_\+legal()} 
+
+\hyperlink{classmain__savitch__14_1_1Othello_ac094aa06f0df5ef57b03e249f892428e}{right\+\_\+legal()} 
+
+\hyperlink{classmain__savitch__14_1_1Othello_a8ec6b317a873a919836c4be0534427b9}{left\+\_\+up\+\_\+legal()} 
+
+\hyperlink{classmain__savitch__14_1_1Othello_ab7af6485f5dc762e92f0858c193e088b}{right\+\_\+up\+\_\+legal()} 
+
+\hyperlink{classmain__savitch__14_1_1Othello_a161a5b2a574446e9cf16e66fab96234d}{left\+\_\+down\+\_\+legal()} 
+
+\hyperlink{classmain__savitch__14_1_1Othello_a639b1780203d650877491fd69e63871a}{right\+\_\+down\+\_\+legal()} 
+\end{DoxySeeAlso}
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!is\+\_\+game\+\_\+over@{is\+\_\+game\+\_\+over}}
+\index{is\+\_\+game\+\_\+over@{is\+\_\+game\+\_\+over}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{is\+\_\+game\+\_\+over() const }{is_game_over() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool main\+\_\+savitch\+\_\+14\+::\+Othello\+::is\+\_\+game\+\_\+over (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmain__savitch__14_1_1Othello_a4387d20f953aab54025760ec3f72f7ca}{}\label{classmain__savitch__14_1_1Othello_a4387d20f953aab54025760ec3f72f7ca}
+
+
+check if game is over 
+
+\begin{DoxyReturn}{Returns}
+return true if game is over 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+get\+\_\+piese() 
+
+human\+\_\+legal() 
+
+\hyperlink{classmain__savitch__14_1_1Othello_aa0a3222b954bf36dec6de48bdf17ebb7}{computer\+\_\+legal()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+return true if the game is over 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmain__savitch__14_1_1game}{main\+\_\+savitch\+\_\+14\+::game}.
+
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!is\+\_\+legal@{is\+\_\+legal}}
+\index{is\+\_\+legal@{is\+\_\+legal}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{is\+\_\+legal(const std\+::string \&move) const }{is_legal(const std::string &move) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool main\+\_\+savitch\+\_\+14\+::\+Othello\+::is\+\_\+legal (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{move}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmain__savitch__14_1_1Othello_af25b1502991e71e6bedbfa36a4006a8c}{}\label{classmain__savitch__14_1_1Othello_af25b1502991e71e6bedbfa36a4006a8c}
+
+
+check if the location player choose is legal or not 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move} & the location which player choose \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+next\+\_\+move() 
+
+get\+\_\+piese() 
+
+\hyperlink{classmain__savitch__14_1_1Othello_a015372a23879814a43aed9b4259f9834}{all\+\_\+legal()} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+return true if the move is legal otherwise false 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classmain__savitch__14_1_1game}{main\+\_\+savitch\+\_\+14\+::game}.
+
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!left\+\_\+down\+\_\+legal@{left\+\_\+down\+\_\+legal}}
+\index{left\+\_\+down\+\_\+legal@{left\+\_\+down\+\_\+legal}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{left\+\_\+down\+\_\+legal(int a, int b, int c, int d) const }{left_down_legal(int a, int b, int c, int d) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool main\+\_\+savitch\+\_\+14\+::\+Othello\+::left\+\_\+down\+\_\+legal (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b, }
+\item[{int}]{c, }
+\item[{int}]{d}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmain__savitch__14_1_1Othello_a161a5b2a574446e9cf16e66fab96234d}{}\label{classmain__savitch__14_1_1Othello_a161a5b2a574446e9cf16e66fab96234d}
+
+
+check if left down side is legal 
+
+\begin{DoxySeeAlso}{See also}
+get\+\_\+piece() 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+return true if it is legal 
+\end{DoxyReturn}
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!left\+\_\+legal@{left\+\_\+legal}}
+\index{left\+\_\+legal@{left\+\_\+legal}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{left\+\_\+legal(int a, int b, int c, int d) const }{left_legal(int a, int b, int c, int d) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool main\+\_\+savitch\+\_\+14\+::\+Othello\+::left\+\_\+legal (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b, }
+\item[{int}]{c, }
+\item[{int}]{d}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmain__savitch__14_1_1Othello_a50e871a1c0ceb803f3ffc4d4b2987062}{}\label{classmain__savitch__14_1_1Othello_a50e871a1c0ceb803f3ffc4d4b2987062}
+
+
+check if left side is legal 
+
+\begin{DoxySeeAlso}{See also}
+get\+\_\+piece() 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+return true if it is legal 
+\end{DoxyReturn}
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!left\+\_\+up\+\_\+legal@{left\+\_\+up\+\_\+legal}}
+\index{left\+\_\+up\+\_\+legal@{left\+\_\+up\+\_\+legal}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{left\+\_\+up\+\_\+legal(int a, int b, int c, int d) const }{left_up_legal(int a, int b, int c, int d) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool main\+\_\+savitch\+\_\+14\+::\+Othello\+::left\+\_\+up\+\_\+legal (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b, }
+\item[{int}]{c, }
+\item[{int}]{d}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmain__savitch__14_1_1Othello_a8ec6b317a873a919836c4be0534427b9}{}\label{classmain__savitch__14_1_1Othello_a8ec6b317a873a919836c4be0534427b9}
+
+
+check if left up side is legal 
+
+\begin{DoxySeeAlso}{See also}
+get\+\_\+piece() 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+return true if it is legal 
+\end{DoxyReturn}
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!pass@{pass}}
+\index{pass@{pass}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{pass(std\+::string move)}{pass(std::string move)}}]{\setlength{\rightskip}{0pt plus 5cm}void main\+\_\+savitch\+\_\+14\+::\+Othello\+::pass (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{move}
+\end{DoxyParamCaption}
+)}\hypertarget{classmain__savitch__14_1_1Othello_aa471c56d1634172f92acdfcbe3faa363}{}\label{classmain__savitch__14_1_1Othello_aa471c56d1634172f92acdfcbe3faa363}
+
+
+check if someone can move next step move 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{classmain__savitch__14_1_1Othello_a4387d20f953aab54025760ec3f72f7ca}{is\+\_\+game\+\_\+over()} 
+
+make\+\_\+move() 
+
+\hyperlink{classmain__savitch__14_1_1Othello_aa0a3222b954bf36dec6de48bdf17ebb7}{computer\+\_\+legal()} 
+
+human\+\_\+legal() 
+\end{DoxySeeAlso}
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!right\+\_\+down\+\_\+legal@{right\+\_\+down\+\_\+legal}}
+\index{right\+\_\+down\+\_\+legal@{right\+\_\+down\+\_\+legal}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{right\+\_\+down\+\_\+legal(int a, int b, int c, int d) const }{right_down_legal(int a, int b, int c, int d) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool main\+\_\+savitch\+\_\+14\+::\+Othello\+::right\+\_\+down\+\_\+legal (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b, }
+\item[{int}]{c, }
+\item[{int}]{d}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmain__savitch__14_1_1Othello_a639b1780203d650877491fd69e63871a}{}\label{classmain__savitch__14_1_1Othello_a639b1780203d650877491fd69e63871a}
+
+
+check if right down side is legal 
+
+\begin{DoxySeeAlso}{See also}
+get\+\_\+piece() 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+return true if it is legal 
+\end{DoxyReturn}
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!right\+\_\+legal@{right\+\_\+legal}}
+\index{right\+\_\+legal@{right\+\_\+legal}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{right\+\_\+legal(int a, int b, int c, int d) const }{right_legal(int a, int b, int c, int d) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool main\+\_\+savitch\+\_\+14\+::\+Othello\+::right\+\_\+legal (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b, }
+\item[{int}]{c, }
+\item[{int}]{d}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmain__savitch__14_1_1Othello_ac094aa06f0df5ef57b03e249f892428e}{}\label{classmain__savitch__14_1_1Othello_ac094aa06f0df5ef57b03e249f892428e}
+
+
+check if right side is legal 
+
+\begin{DoxySeeAlso}{See also}
+get\+\_\+piece() 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+return true if it is legal 
+\end{DoxyReturn}
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!right\+\_\+up\+\_\+legal@{right\+\_\+up\+\_\+legal}}
+\index{right\+\_\+up\+\_\+legal@{right\+\_\+up\+\_\+legal}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{right\+\_\+up\+\_\+legal(int a, int b, int c, int d) const }{right_up_legal(int a, int b, int c, int d) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool main\+\_\+savitch\+\_\+14\+::\+Othello\+::right\+\_\+up\+\_\+legal (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b, }
+\item[{int}]{c, }
+\item[{int}]{d}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmain__savitch__14_1_1Othello_ab7af6485f5dc762e92f0858c193e088b}{}\label{classmain__savitch__14_1_1Othello_ab7af6485f5dc762e92f0858c193e088b}
+
+
+check if right up side is legal 
+
+\begin{DoxySeeAlso}{See also}
+get\+\_\+piece() 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+return true if it is legal 
+\end{DoxyReturn}
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!up\+\_\+legal@{up\+\_\+legal}}
+\index{up\+\_\+legal@{up\+\_\+legal}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{up\+\_\+legal(int a, int b, int c, int d) const }{up_legal(int a, int b, int c, int d) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool main\+\_\+savitch\+\_\+14\+::\+Othello\+::up\+\_\+legal (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b, }
+\item[{int}]{c, }
+\item[{int}]{d}
+\end{DoxyParamCaption}
+) const}\hypertarget{classmain__savitch__14_1_1Othello_a23310eaa078cddaf0fd86303f2f191f4}{}\label{classmain__savitch__14_1_1Othello_a23310eaa078cddaf0fd86303f2f191f4}
+
+
+check if up side is legal 
+
+\begin{DoxySeeAlso}{See also}
+get\+\_\+piece() 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+return true if it is legal 
+\end{DoxyReturn}
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!winning@{winning}}
+\index{winning@{winning}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{winning() const }{winning() const }}]{\setlength{\rightskip}{0pt plus 5cm}game\+::who main\+\_\+savitch\+\_\+14\+::\+Othello\+::winning (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmain__savitch__14_1_1Othello_a8934d1b63f73c03dae9629dbe03955d7}{}\label{classmain__savitch__14_1_1Othello_a8934d1b63f73c03dae9629dbe03955d7}
+
+
+check who is the winnner 
+
+\begin{DoxySeeAlso}{See also}
+get\+\_\+piece() 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+return who wins this game otherwise return neutral 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classmain__savitch__14_1_1game_a081611c42aa66b4d91bbefeec47c7c4e}{main\+\_\+savitch\+\_\+14\+::game}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+othello.\+h\item 
+\hyperlink{othello_8cc}{othello.\+cc}\end{DoxyCompactItemize}

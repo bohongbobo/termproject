@@ -1,0 +1,113 @@
+\begin{theindex}
+
+  \item {all\+\_\+legal}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{12}
+
+  \indexspace
+
+  \item {compute\+\_\+moves}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{12}
+  \item {computer\+\_\+legal}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{13}
+
+  \indexspace
+
+  \item {display\+\_\+message}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{13}
+    \subitem {main\+\_\+savitch\+\_\+14\+::game}, \hyperpage{10}
+  \item {display\+\_\+status}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{13}
+  \item {down\+\_\+legal}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{13}
+
+  \indexspace
+
+  \item {evaluate}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{14}
+
+  \indexspace
+
+  \item {flip\+\_\+flip}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{14}
+
+  \indexspace
+
+  \item {game.\+cc}, \hyperpage{19}
+
+  \indexspace
+
+  \item {is\+\_\+game\+\_\+over}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{14}
+  \item {is\+\_\+legal}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{15}
+
+  \indexspace
+
+  \item {left\+\_\+down\+\_\+legal}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{15}
+  \item {left\+\_\+legal}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{15}
+  \item {left\+\_\+up\+\_\+legal}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{16}
+
+  \indexspace
+
+  \item {main.\+cc}, \hyperpage{20}
+  \item {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{11}
+    \subitem {all\+\_\+legal}, \hyperpage{12}
+    \subitem {compute\+\_\+moves}, \hyperpage{12}
+    \subitem {computer\+\_\+legal}, \hyperpage{13}
+    \subitem {display\+\_\+message}, \hyperpage{13}
+    \subitem {display\+\_\+status}, \hyperpage{13}
+    \subitem {down\+\_\+legal}, \hyperpage{13}
+    \subitem {evaluate}, \hyperpage{14}
+    \subitem {flip\+\_\+flip}, \hyperpage{14}
+    \subitem {is\+\_\+game\+\_\+over}, \hyperpage{14}
+    \subitem {is\+\_\+legal}, \hyperpage{15}
+    \subitem {left\+\_\+down\+\_\+legal}, \hyperpage{15}
+    \subitem {left\+\_\+legal}, \hyperpage{15}
+    \subitem {left\+\_\+up\+\_\+legal}, \hyperpage{16}
+    \subitem {pass}, \hyperpage{16}
+    \subitem {right\+\_\+down\+\_\+legal}, \hyperpage{16}
+    \subitem {right\+\_\+legal}, \hyperpage{16}
+    \subitem {right\+\_\+up\+\_\+legal}, \hyperpage{17}
+    \subitem {up\+\_\+legal}, \hyperpage{17}
+    \subitem {winning}, \hyperpage{17}
+  \item {main\+\_\+savitch\+\_\+14\+::\+Piece}, \hyperpage{18}
+  \item {main\+\_\+savitch\+\_\+14\+::game}, \hyperpage{9}
+    \subitem {display\+\_\+message}, \hyperpage{10}
+    \subitem {play}, \hyperpage{10}
+    \subitem {winning}, \hyperpage{10}
+
+  \indexspace
+
+  \item {othello.\+cc}, \hyperpage{21}
+
+  \indexspace
+
+  \item {pass}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{16}
+  \item {play}
+    \subitem {main\+\_\+savitch\+\_\+14\+::game}, \hyperpage{10}
+
+  \indexspace
+
+  \item {right\+\_\+down\+\_\+legal}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{16}
+  \item {right\+\_\+legal}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{16}
+  \item {right\+\_\+up\+\_\+legal}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{17}
+
+  \indexspace
+
+  \item {up\+\_\+legal}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{17}
+
+  \indexspace
+
+  \item {winning}
+    \subitem {main\+\_\+savitch\+\_\+14\+::\+Othello}, \hyperpage{17}
+    \subitem {main\+\_\+savitch\+\_\+14\+::game}, \hyperpage{10}
+
+\end{theindex}
