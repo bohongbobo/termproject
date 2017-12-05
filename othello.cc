@@ -152,6 +152,7 @@ namespace main_savitch_14
 					}
 			}
 		}
+		return false;
 	}
 
 /**
@@ -201,6 +202,7 @@ namespace main_savitch_14
 		else if(!human_legal()&&!computer_legal()){
 			return true;
 		}
+		return false;
 	}
 
 /**
@@ -414,8 +416,9 @@ namespace main_savitch_14
 					return true;
 				}
 			}
-		return false;
+		//return false;
 		}
+		return false;
 	}
 /**
 * @brief check if down side is legal
@@ -656,6 +659,7 @@ namespace main_savitch_14
 		else if(black == 0){
 			return NEUTRAL;
 		}
+		return NEUTRAL;
 	}
 
 /**

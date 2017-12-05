@@ -1,1 +1,0 @@
-'-###' '-c' 'game.cc' 'main.cc' 'othello.cc' '-fno-cxx-modules' '-Qunused-arguments' '-Wno-ignored-optimization-argument'

@@ -1,0 +1,20 @@
+[5523][environment] CWD = /Users/bobo/Desktop/termproject
+[5523][environment] No .inferconfig file found
+[5523][environment] Project root = /Users/bobo/Desktop/termproject
+[5523][environment] INFER_ARGS = 
+[5523][environment] command line arguments: /usr/local/Cellar/infer/0.13.0/libexec/bin/infer^--^g++^-c^game.cc^main.cc^othello.cc
+[5523][environment] Analyzer: checkers
+[5523][environment] Active checkers: annotation reachability (Java), biabduction (C/C++/ObjC, Java), fragment retains view (Java), immutable cast (Java), liveness (C/C++/ObjC), printf args (Java), quandary (C/C++/ObjC, Java), RacerD (C/C++/ObjC, Java), SIOF (C/C++/ObjC)
+[5523][   progress] Capturing in make/cc mode...
+[5523][      debug] 
+[5523][      debug] *** Beginning capture of file /Users/bobo/Desktop/termproject/game.cc ***
+[5523][      debug] Clang frontend action is translating and linting
+[5523][      debug] Loading the following linters files: /usr/local/Cellar/infer/0.13.0/lib/infer/infer/bin/../lib/linter_rules/linters.al
+[5523][      debug] Elapsed: 2.873s.
+[5523][      debug] 
+[5523][ extern err] Error: the following clang command did not run successfully:
+[5523][ extern err]   '/usr/local/Cellar/infer/0.13.0/lib/infer/facebook-clang-plugins/clang/install/bin/clang++' "@/var/folders/6d/87mc4m1115b2kt4hjv_tr0l40000gn/T/clang_command_af1336.txt"
+[5523][ extern err] 
+[5523][environment] Infer version v0.13.0
+[5523][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[5523][environment] 
