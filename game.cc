@@ -76,7 +76,7 @@ namespace main_savitch_14
 */
     game::who game::winning( ) const
     {
-	char level = '0';
+	char level;
 	int value = evaluate(level); // Evaluate based on move that was just made.
 
 	if (value > 0)
